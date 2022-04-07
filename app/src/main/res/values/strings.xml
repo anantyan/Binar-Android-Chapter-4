@@ -21,9 +21,6 @@
     <string name="txt_messages">Messages</string>
     <string name="txt_submit">Submit</string>
     <string name="txt_tambah_data">Tambah Data</string>
-    <string name="txt_not_found_email">Email tidak sama dengan yang dibuat atau tidak ada!</string>
-    <string name="txt_not_found_password">Password tidak sama dengan yang dibuat atau tidak ada!</string>
-    <string name="txt_found_full_name">Fullname sudah dibuat!</string>
-    <string name="txt_found_profession">Profesi sudah dibuat!</string>
-    <string name="txt_found_email">Email sudah dibuat!</string>
+    <string name="txt_not_found_data">Data tidak ditemukan!</string>
+    <string name="txt_found_data">Data sudah dibuat!</string>
 </resources>

@@ -27,8 +27,6 @@ class MessagesViewModel(application: Application): AndroidViewModel(application)
 
     fun select() = repository.select()
 
-    fun selectById(id: Int) = repository.selectById(id)
-
     fun insert(item: Messages) = CoroutineScope(Dispatchers.IO).launch {
         repository.insert(item)
     }
@@ -39,9 +37,5 @@ class MessagesViewModel(application: Application): AndroidViewModel(application)
 
     fun delete(item: Messages) = CoroutineScope(Dispatchers.IO).launch {
         repository.delete(item)
-    }
-
-    fun deleteAll() = CoroutineScope(Dispatchers.IO).launch {
-        repository.deleteAll()
     }
 }

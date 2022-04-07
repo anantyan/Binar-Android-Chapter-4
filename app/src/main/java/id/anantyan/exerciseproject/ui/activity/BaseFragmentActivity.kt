@@ -11,7 +11,7 @@ import id.anantyan.exerciseproject.databinding.ActivityBaseFragmentBinding
 import id.anantyan.exerciseproject.ui.fragment.DoctorFragment
 import id.anantyan.exerciseproject.ui.fragment.HospitalFragment
 import id.anantyan.exerciseproject.ui.fragment.messages.MessagesFragment
-import id.anantyan.exerciseproject.ui.fragment.SharedViewModel
+import id.anantyan.exerciseproject.ui.SharedViewModel
 import id.anantyan.exerciseproject.model.Messages
 import id.anantyan.utils.Constant.PASSING_TO_MESSAGES_ACTIVITY
 

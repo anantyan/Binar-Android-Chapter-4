@@ -7,20 +7,18 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import id.anantyan.exerciseproject.R
-import id.anantyan.exerciseproject.ui.activity.BaseFragmentActivity
-import id.anantyan.exerciseproject.ui.activity.MessagesDetailActivity
-import id.anantyan.exerciseproject.ui.adapter.messages.MessagesAdapter
-import id.anantyan.exerciseproject.ui.adapter.messages.MessagesHelper
 import id.anantyan.exerciseproject.databinding.FragmentMessagesBinding
 import id.anantyan.exerciseproject.model.Messages
-import id.anantyan.exerciseproject.ui.fragment.SharedViewModel
+import id.anantyan.exerciseproject.ui.activity.BaseFragmentActivity
+import id.anantyan.exerciseproject.ui.adapter.messages.MessagesAdapter
+import id.anantyan.exerciseproject.ui.adapter.messages.MessagesHelper
+import id.anantyan.exerciseproject.ui.SharedViewModel
+import id.anantyan.exerciseproject.ui.activity.MessagesDetailActivity
 import id.anantyan.utils.Constant.PASSING_TO_MESSAGES_ACTIVITY
 import id.anantyan.utils.dividerVertical
-import kotlinx.coroutines.launch
 
 class MessagesFragment : Fragment() {
 

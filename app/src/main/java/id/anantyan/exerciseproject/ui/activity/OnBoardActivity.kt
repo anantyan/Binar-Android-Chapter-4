@@ -9,6 +9,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 import id.anantyan.exerciseproject.R
 import id.anantyan.exerciseproject.ui.adapter.OnBoardAdapter
 import id.anantyan.exerciseproject.databinding.ActivityOnBoardBinding
+import id.anantyan.exerciseproject.ui.activity.signin.SignInActivity
+import id.anantyan.exerciseproject.ui.activity.signup.SignUpActivity
 import id.anantyan.utils.sharedPreferences.PreferenceHelper
 import id.anantyan.utils.sharedPreferences.PreferenceManager
 

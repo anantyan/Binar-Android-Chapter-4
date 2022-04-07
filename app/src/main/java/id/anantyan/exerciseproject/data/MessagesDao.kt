@@ -18,9 +18,9 @@ interface MessagesDao {
     @Query("DELETE FROM table_messages")
     suspend fun deleteAll()
 
+    @Query("SELECT * FROM table_messages WHERE id=:id")
+    suspend fun selectById(id: Int): Messages
+
     @Query("SELECT * FROM table_messages ORDER BY id ASC")
     fun select(): LiveData<List<Messages>>
-
-    @Query("SELECT * FROM table_messages WHERE id=:id")
-    fun selectById(id: Int): LiveData<Messages>
 }

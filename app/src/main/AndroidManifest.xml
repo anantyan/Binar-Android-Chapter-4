@@ -16,10 +16,10 @@
             android:name="id.anantyan.exerciseproject.ui.activity.BaseFragmentActivity"
             android:exported="false" />
         <activity
-            android:name="id.anantyan.exerciseproject.ui.activity.SignUpActivity"
+            android:name="id.anantyan.exerciseproject.ui.activity.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="id.anantyan.exerciseproject.ui.activity.SignInActivity"
+            android:name="id.anantyan.exerciseproject.ui.activity.signin.SignInActivity"
             android:exported="false" />
         <activity
             android:name="id.anantyan.exerciseproject.ui.activity.OnBoardActivity"

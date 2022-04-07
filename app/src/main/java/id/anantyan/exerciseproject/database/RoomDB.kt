@@ -5,9 +5,14 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import id.anantyan.exerciseproject.data.MessagesDao
+import id.anantyan.exerciseproject.data.UsersDao
 import id.anantyan.exerciseproject.model.Messages
+import id.anantyan.exerciseproject.model.Users
 
-@Database(entities = [Messages::class], version = 1, exportSchema = false)
+@Database(entities = [
+    Messages::class,
+    Users::class
+], version = 2, exportSchema = false)
 abstract class RoomDB : RoomDatabase() {
 
     companion object {
@@ -24,7 +29,7 @@ abstract class RoomDB : RoomDatabase() {
                     context.applicationContext,
                     RoomDB::class.java,
                     "db_users"
-                ).build()
+                ).fallbackToDestructiveMigration().build()
                 INSTANCE = db
                 return db
             }
@@ -32,4 +37,5 @@ abstract class RoomDB : RoomDatabase() {
     }
 
     abstract fun messagesDao(): MessagesDao
+    abstract fun usersDao(): UsersDao
 }

@@ -12,50 +12,14 @@ class PreferenceManager(context: Context) : PreferenceHelper {
 
     companion object {
         private const val LOG_IN = "LOG_IN"
-        private const val FULL_NAME = "FULL_NAME"
-        private const val PROFESSION = "PROFESSION"
-        private const val EMAIL = "EMAIL"
-        private const val PASSWORD = "PASSWORD"
     }
 
     override fun setLogIn(value: Boolean) {
         prefShared.set(LOG_IN, value)
     }
 
-    override fun setFullname(value: String) {
-        prefShared.set(FULL_NAME, value)
-    }
-
-    override fun setProfession(value: String) {
-        prefShared.set(PROFESSION, value)
-    }
-
-    override fun setEmail(value: String) {
-        prefShared.set(EMAIL, value)
-    }
-
-    override fun setPassword(value: String) {
-        prefShared.set(PASSWORD, value)
-    }
-
     override fun getLogIn(): Boolean? {
         return prefShared.getBoolean(LOG_IN, false)
-    }
-
-    override fun getFullname(): String? {
-        return prefShared.getString(FULL_NAME, "")
-    }
-
-    override fun getProfession(): String? {
-        return prefShared.getString(PROFESSION, "")
-    }
-
-    override fun getEmail(): String? {
-        return prefShared.getString(EMAIL, "")
-    }
-
-    override fun getPassword(): String? {
-        return prefShared.getString(PASSWORD, "")
     }
 }
 

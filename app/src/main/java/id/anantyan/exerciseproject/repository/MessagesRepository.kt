@@ -6,6 +6,7 @@ import id.anantyan.utils.LiveEvent
 
 class MessagesRepository(private val usersDao: MessagesDao) {
 
+    val _seectById: LiveEvent<Messages> = LiveEvent()
     val _insert: LiveEvent<Messages> = LiveEvent()
     val _update: LiveEvent<Messages> = LiveEvent()
     val _delete: LiveEvent<Messages> = LiveEvent()
@@ -13,7 +14,9 @@ class MessagesRepository(private val usersDao: MessagesDao) {
 
     fun select() = usersDao.select()
 
-    fun selectById(id: Int) = usersDao.selectById(id)
+    suspend fun selectById(id: Int) {
+        _seectById.postValue(usersDao.selectById(id))
+    }
 
     suspend fun insert(item: Messages) {
         usersDao.insert(item)
