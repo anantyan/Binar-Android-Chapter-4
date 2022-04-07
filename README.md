@@ -5,9 +5,7 @@ Hello 🚀
 - Shared Preferences
 - View Pager 2
 - Coroutine
-- Lifecycle
-- Live Data
-- View Model
+- Lifecycle Component
 - ROOM
 - Recycler View + Diffutils
 - **MVVM Based**
