@@ -11,9 +11,9 @@ Hello 🚀
 - **MVVM Based**
 - Material Design Based
 ### Mp4
-![hmm](screenshoot/Record_2022-04-09-03-50-13.mp4)
+![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/Challenge/screenshoot/screenshoot/Record_2022-04-09-03-50-13.gif)
 ### Screenshoot aplikasi
-![hmm](screenshoot/pages.png)
-![hmm](screenshoot/pages___1.png)
-![hmm](screenshoot/pages___2.png)
-![hmm](screenshoot/pages___3.png)
+![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/Challenge/screenshoot/pages.png)
+![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/Challenge/screenshoot/pages___1.png)
+![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/Challenge/screenshoot/pages___2.png)
+![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/Challenge/screenshoot/pages___3.png)
