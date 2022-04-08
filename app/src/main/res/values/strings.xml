@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Challange Chapter 4</string>
+    <string name="txt_field_success_inserted">Berhasil tersimpan!</string>
+    <string name="txt_field_failed_inserted">Gagal tersimpan!</string>
+    <string name="txt_field_success_updated">Berhasil terupdate!</string>
+    <string name="txt_field_failed_updated">Gagal update!</string>
+    <string name="txt_field_success_deleted">Berhasil menghapus!</string>
+    <string name="txt_field_failed_deleted">Gagal mengahapus!</string>
+    <string name="txt_field_failed_register">Akun sudah dibuat!</string>
+    <string name="txt_field_failed_login">Data tidak ditemukan!</string>
+</resources>
