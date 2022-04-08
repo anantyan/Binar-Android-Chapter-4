@@ -1,4 +1,4 @@
-# Binar ExerciseProject Chapter 4
+# Binar Challenge Chapter 4
 Hello 🚀
 ### Racikan tambahan
 - ROOM
@@ -10,8 +10,8 @@ Hello 🚀
 - Recycler View + Diffutils
 - **MVVM Based**
 - Material Design Based
-### Gif
-![hmm](https://raw.githubusercontent.com/anantyan/Binar-Android-Chapter-4/ExerciseProject/screenshoot/Record_2022-04-07-12-43-48.gif)
+### Mp4
+![hmm](screenshoot/Record_2022-04-09-03-50-13.mp4)
 ### Screenshoot aplikasi
 ![hmm](screenshoot/pages.png)
 ![hmm](screenshoot/pages___1.png)
