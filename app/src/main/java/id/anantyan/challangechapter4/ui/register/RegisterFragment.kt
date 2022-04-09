@@ -47,9 +47,9 @@ class RegisterFragment : Fragment() {
 
     private fun onInsertData() {
         val item = Users(
-            username = binding.txtInputUsername.text.toString(),
-            email = binding.txtInputEmail.text.toString(),
-            password = binding.txtInputRePassword.text.toString()
+            username = binding.txtInputUsername.text.toString().trim(),
+            email = binding.txtInputEmail.text.toString().trim(),
+            password = binding.txtInputRePassword.text.toString().trim()
         )
         viewModel.insert(item)
     }

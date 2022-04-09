@@ -50,8 +50,8 @@ class LoginFragment : Fragment() {
 
     private fun onSelectByEmailAndPasswordData() {
         val item = Users(
-            email = binding.txtInputEmail.text.toString(),
-            password = binding.txtInputPassword.text.toString()
+            email = binding.txtInputEmail.text.toString().trim(),
+            password = binding.txtInputPassword.text.toString().trim()
         )
         viewModel.selectByEmailAndPassword(item)
     }

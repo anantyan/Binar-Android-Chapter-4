@@ -4,9 +4,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class RVExtendedFloatingButtonView(
-    private var extendedFloatingActionButton: ExtendedFloatingActionButton
-): RecyclerView.OnScrollListener() {
+fun rvExtendedFloatingButtonView(extendedFloatingActionButton: ExtendedFloatingActionButton) =
+    object : RecyclerView.OnScrollListener() {
     override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
         if (newState == RecyclerView.SCROLL_STATE_IDLE
             && !extendedFloatingActionButton.isExtended
@@ -20,9 +19,7 @@ class RVExtendedFloatingButtonView(
     }
 }
 
-class RVFloatingActionButtonView(
-    private var floatingActionButton: FloatingActionButton
-) : RecyclerView.OnScrollListener() {
+fun rvFloatingActionButtonView(floatingActionButton: FloatingActionButton) = object : RecyclerView.OnScrollListener() {
     override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
         if (newState == RecyclerView.SCROLL_STATE_IDLE
             && !floatingActionButton.isOrWillBeShown

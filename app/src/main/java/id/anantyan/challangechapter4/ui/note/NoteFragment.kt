@@ -19,8 +19,7 @@ import id.anantyan.challangechapter4.ui.adapter.NoteHelper
 import id.anantyan.challangechapter4.ui.dialog.NoteDialog
 import id.anantyan.challangechapter4.ui.dialog.NoteDialogHelper
 import id.anantyan.utils.dividerVertical
-import id.anantyan.utils.sharedPreferences.PreferenceHelper
-import id.anantyan.utils.sharedPreferences.PreferenceManager
+import id.anantyan.utils.rvFloatingActionButtonView
 
 class NoteFragment : Fragment() {
 
@@ -45,6 +44,7 @@ class NoteFragment : Fragment() {
         binding.rvNotes.setHasFixedSize(true)
         binding.rvNotes.layoutManager = LinearLayoutManager((context as MainActivity))
         binding.rvNotes.itemAnimator = DefaultItemAnimator()
+        binding.rvNotes.addOnScrollListener(rvFloatingActionButtonView(binding.fabAdd))
         binding.rvNotes.addItemDecoration(
             dividerVertical((context as MainActivity), 32, 0)
         )

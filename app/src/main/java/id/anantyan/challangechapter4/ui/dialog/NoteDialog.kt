@@ -27,8 +27,8 @@ class NoteDialog(private val context: Context) : NoteDialogHelper {
         val btnPositif = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
         btnPositif.setOnClickListener {
             val item = Notes(
-                title = binding.txtInputTitle.text.toString(),
-                note = binding.txtInputNote.text.toString()
+                title = binding.txtInputTitle.text.toString().trim(),
+                note = binding.txtInputNote.text.toString().trim()
             )
             validator(context) {
                 this.mode = Mode.CONTINUOUS
@@ -61,8 +61,8 @@ class NoteDialog(private val context: Context) : NoteDialogHelper {
         btnPositif.setOnClickListener {
             val item = Notes(
                 id = notes.id,
-                title = binding.txtInputTitle.text.toString(),
-                note = binding.txtInputNote.text.toString()
+                title = binding.txtInputTitle.text.toString().trim(),
+                note = binding.txtInputNote.text.toString().trim()
             )
             validator(context) {
                 this.mode = Mode.CONTINUOUS
@@ -105,7 +105,7 @@ class NoteDialog(private val context: Context) : NoteDialogHelper {
         val builder = MaterialAlertDialogBuilder(context)
         builder.setCancelable(false)
         builder.setTitle("Attention!")
-        builder.setMessage("Apakah anda ingin menhapus ${notes.note}?")
+        builder.setMessage("Apakah anda ingin menghapus ${notes.title}?")
         builder.setPositiveButton("Iya", null)
         builder.setNegativeButton("Tidak") { dialog, _ ->
             dialog.dismiss()
